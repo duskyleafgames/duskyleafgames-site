@@ -6,7 +6,7 @@
     <title>Dusky Leaf Games</title>
     <style>
         body {
-            background-color: #ffffff; /* Deep "Gamer" Dark */
+            background-color: #ffffff;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -20,10 +20,9 @@
             padding: 20px;
         }
         img {
-            max-width: 3826px; /* Adjust based on your logo shape */
-            width: 50%;
+            /* clamp(minimum, preferred, maximum) */
+            width: clamp(70%, 10vw + 50%, 100%);
             height: auto;
-            filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
         }
         p {
             margin-top: 20px;
